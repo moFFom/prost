@@ -1,0 +1,15 @@
+def main():
+    n=input("введите любое число: ")
+    z = 2
+    y=n
+    -1
+    while d<n:
+        x=n%z
+        z+=1
+        if x== 0:
+            print "это число непростое"
+            break
+        else:
+            print "это число простое"
+            break
+main()
