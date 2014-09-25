@@ -1,0 +1,12 @@
+def main():
+    nx = input("Введите номер цифры: ")
+    y=1
+    a=0
+    b=1
+    while y<nx:
+        c=a+b
+        a=b
+        b=c
+        y=y+1
+    print "Цифра: ", b
+main()
