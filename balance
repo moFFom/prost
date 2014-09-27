@@ -1,0 +1,12 @@
+def addInterest(balance,rate):
+    for i in range(len(balance)):
+        balance[i]=balance[i]*(1+rate)
+    return balance
+
+def main():
+    balance=[1000,500,800,900]
+    rate=0.05
+    b = addInterest(balance,rate)
+    print b
+    
+main()
