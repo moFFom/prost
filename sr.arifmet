@@ -1,0 +1,7 @@
+def main():
+    a=range(1,7)
+    a=[float(i) for i in a]
+    s=sum(a)/len(a)
+    print s
+    
+main()
