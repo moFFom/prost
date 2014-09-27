@@ -1,9 +1,8 @@
 def main():
     n=input("введите любое число: ")
     z = 2
-    y=n
-    -1
-    while d<n:
+    y=n-1
+    while z<n:
         x=n%z
         z+=1
         if x== 0:
