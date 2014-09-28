@@ -1,0 +1,23 @@
+from graphics import *
+def main():
+    win=GraphWin()
+    p1=Point(50,10)
+    p2=Point(100,60)
+    p3=Point(10,60)
+    p4=Point(140,110)
+    p5=Point(120,110)
+    p6=Point(30,110)
+    rec=Rectangle(p3,p4)
+    rec.draw(win)
+    rec.setFill('grey')
+    okn=Rectangle(p1,p2)
+    okn.draw(win)
+    okn.setFill('Yellow')
+    c1=Circle(p5,20)
+    c2=Circle(p6,20)
+    c1.draw(win)
+    c2.draw(win)
+    c1.setFill('black')
+    c2.setFill('black')
+main()
+    
