@@ -27,3 +27,4 @@ def main():
 
     win.setMouse()
     win.close()
+main()
