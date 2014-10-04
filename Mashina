@@ -1,23 +1,38 @@
-from graphics import *
-def main():
-    win=GraphWin()
-    p1=Point(50,10)
-    p2=Point(100,60)
-    p3=Point(10,60)
-    p4=Point(140,110)
-    p5=Point(120,110)
-    p6=Point(30,110)
-    rec=Rectangle(p3,p4)
-    rec.draw(win)
-    rec.setFill('grey')
-    okn=Rectangle(p1,p2)
-    okn.draw(win)
-    okn.setFill('Yellow')
-    c1=Circle(p5,20)
-    c2=Circle(p6,20)
-    c1.draw(win)
-    c2.draw(win)
-    c1.setFill('black')
-    c2.setFill('black')
-main()
-    
+from graphics import*
+import time
+win=GraphWin("Patrick",1000,300)
+p1=Point(50,10)
+p2=Point(100,60)
+p3=Point(10,60)
+p4=Point(140,110)
+p5=Point(120,110)
+p6=Point(30,110)
+rec=Rectangle(p3,p4)
+rec.draw(win)
+rec.setFill('grey')
+okn=Rectangle(p1,p2)
+okn.draw(win)
+okn.setFill('Yellow')
+c1=Circle(p5,20)
+c2=Circle(p6,20)
+c1.draw(win)
+c2.draw(win)
+c1.setFill('black')
+c2.setFill('black')
+z=[rec,okn,c1,c2]
+win.getMouse()
+y=1
+while y<10000:
+    if y>=1000:
+        rec.move(-1,1)
+        time.sleep(0.0005)
+        okn.move(-1,1)
+        c1.move(-1,1)
+        c2.move(-1,1)
+    else:
+        rec.move(1,0)
+        time.sleep(0.0005)
+        okn.move(1,0)
+        c1.move(1,0)
+        c2.move(1,0)
+    y+=1
